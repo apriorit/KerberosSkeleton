@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Mock">
+      <UniqueIdentifier>{34b5f251-4e70-4d3d-a6e0-c15f5e0e31b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mock">
+      <UniqueIdentifier>{8c8ed05f-492e-4251-8d88-fc4d33c48dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{7102900c-1621-47ce-a84c-90f8e463322e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Client">
+      <UniqueIdentifier>{4e1a6a8d-2e24-434e-abd2-c274b9091cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{7d7ea249-bc1e-4aa5-a5ef-02fc8c8ba129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{04564f57-bda8-48b7-8d7b-2cee8b38cfc7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSpnValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mock\MockSecur32Wrapper.cpp">
+      <Filter>Source Files\Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="TestKerbRetrieveTktRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestKerberosTicketsManger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestKerbAuthRequestDecorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mock\MockSystemApiWrapper.cpp">
+      <Filter>Source Files\Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSpnManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mock\MockServerRequest.cpp">
+      <Filter>Source Files\Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="Mock\MockServerResponse.cpp">
+      <Filter>Source Files\Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSpnResponseStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLsaLogonUserDataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestKerbAuthenticator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestKerbAuthStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KerbAuthenticator.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="KerbAuthStrategy.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="SpnResponseStrategy.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="KerbAuthRequestDecorator.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestSpnValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock\MockSecur32Wrapper.h">
+      <Filter>Header Files\Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="TestKerbRetrieveTktRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock\MockSystemApiWrapper.h">
+      <Filter>Header Files\Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock\MockServerRequest.h">
+      <Filter>Header Files\Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock\MockServerResponse.h">
+      <Filter>Header Files\Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLsaLogonUserDataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KerbAuthenticator.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="KerbAuthStrategy.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="SpnResponseStrategy.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="KerbAuthRequestDecorator.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
