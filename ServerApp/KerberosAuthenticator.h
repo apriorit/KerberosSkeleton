@@ -1,14 +1,14 @@
-#ifndef KERB_AUTHENTICATOR
-#define KERB_AUTHENTICATOR
+#ifndef KERBEROS_AUTHENTICATOR
+#define KERBEROS_AUTHENTICATOR
 
 #include "AKerbAuthenticator.h"
 
 namespace KerberosServer
 {
-    class KerbAuthenticator : public AKerbAuthenticator
+    class KerberosAuthenticator : public AKerbAuthenticator
     {
     public:
-        explicit KerbAuthenticator(Secur32::Secur32WrapperPtr secur32Wrapper);
+        explicit KerberosAuthenticator(Secur32::Secur32WrapperPtr secur32Wrapper);
 
     private:
         virtual SystemApiWrapperPtr GetSystemApiWrapper()const;
@@ -18,5 +18,4 @@ namespace KerberosServer
     };
 }
 
-#endif // !KERB_AUTHENTICATOR
-
+#endif // !KERBEROS_AUTHENTICATOR

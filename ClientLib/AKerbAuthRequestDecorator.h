@@ -18,6 +18,9 @@ namespace KerberosClient
         virtual ServerRequestPtr PackTicketsToRequest(const TicketData&, const TicketData&) = 0;
 
     private:
+        virtual ULONG GetKerberosTicketFlags()const;
+
+    private:
         typedef std::shared_ptr<Secur32::ISecur32Wrapper> Secur32WrapperPtr;
 
         SpnValidatorPtr m_spnValidator;

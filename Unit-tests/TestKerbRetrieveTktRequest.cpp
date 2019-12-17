@@ -1,4 +1,5 @@
 #include "TestKerbRetrieveTktRequest.h"
+#include "KerberosTicketsManger.h"
 
 using namespace KerberosClient;
 
@@ -49,7 +50,7 @@ TEST_P(TestKerbRetrieveTktRequestWithInit, TicketRequests)
 {
     auto expectedResult = GetParam();
 
-    const int ticketFlags = 0x60A00000;
+    const int ticketFlags = KerberosTicketOptions::Forwardable | KerberosTicketOptions::Forwarded | KerberosTicketOptions::Renewable | KerberosTicketOptions::Pre_authent;
     const int cacheOptions = (GetParam().initial_targetName == L"krbtgt" ? KERB_RETRIEVE_TICKET_AS_KERB_CRED : KERB_RETRIEVE_TICKET_DEFAULT);
 
     m_kerbRetrieveTktRequest->SetTicketFlags(ticketFlags);

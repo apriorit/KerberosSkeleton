@@ -19,7 +19,7 @@ ServerResponsePtr AKerbAuthRequestDecorator::SendRequest()
     ServerResponsePtr spnResponse;
     TicketData serviceTicket;
     TicketData krbtgtTicket;
-    const ULONG ticketFlags = 0x60A00000; //forwardable forwarded renewable pre_authent
+    const ULONG ticketFlags = GetKerberosTicketFlags();
 
     static const std::wstring krbtgtName = L"krbtgt";
     static const std::wstring SPN_KEY = L"SPN";
@@ -50,4 +50,9 @@ ServerResponsePtr AKerbAuthRequestDecorator::SendRequest()
     ServerResponsePtr authResponse = authRequest->SendRequest();
 
     return authResponse;
+}
+
+ULONG AKerbAuthRequestDecorator::GetKerberosTicketFlags()const
+{
+    return KerberosTicketOptions::Forwardable | KerberosTicketOptions::Forwarded | KerberosTicketOptions::Renewable | KerberosTicketOptions::Pre_authent;
 }

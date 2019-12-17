@@ -6,6 +6,31 @@
 
 namespace KerberosClient
 {
+    enum KerberosTicketOptions
+    {
+        Validate = 1,
+        Renew = 2,
+        Enc_tkt_in_skey = 8,
+        Renewable_ok = 16,
+        Disable_transited_check = 32,
+        Name_canonicalize = 65536,
+        Request_anonymous = 131072,
+        Ok_as_delegate = 262144,
+        Transited_policy_checked = 524288,
+        Opt_hardware_auth = 1048576,
+        Pre_authent = 2097152,
+        Initial = 4194304,
+        Renewable = 8388608,
+        Invalid = 16777216,
+        Postdated = 33554432,
+        Allow_postdate = 67108864,
+        Proxy = 134217728,
+        Proxiable = 268435456,
+        Forwarded = 536870912,
+        Forwardable = 1073741824,
+        Reserved = 2147483648,
+    };
+
     class KerberosTicketsManger
     {
     public:
